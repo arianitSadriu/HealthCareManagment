@@ -2,6 +2,7 @@ package HealthCareManagment.model;
 
 public class Patient extends Person{
     private int age;
+
     public Patient(int id, String name, String phone, String email, int age) {
         super(id, name, phone, email);
         this.age = age;
@@ -13,6 +14,7 @@ public class Patient extends Person{
                 name, id, age, phone, email
         );
     }
+
     public int getAge() {
         return age;
     }
@@ -20,7 +22,4 @@ public class Patient extends Person{
         this.age = age;
     }
 
-    public String getName() {
-        return name;
-    }
 }

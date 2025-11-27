@@ -10,9 +10,14 @@ public enum AppointmentStatus {
 
     //Constructor
     AppointmentStatus(String statusiShqip) {
+
         this.statusiShqip = statusiShqip;
     }
     public String getStatusiShqip() {
+
+        return statusiShqip;
+    }
+    public String toString() {
         return statusiShqip;
     }
 
