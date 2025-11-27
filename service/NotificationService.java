@@ -1,4 +1,5 @@
 package HealthCareManagment.service;
 
-public class NotificationService {
+public interface NotificationService {
+    void sendNotification(String message);
 }

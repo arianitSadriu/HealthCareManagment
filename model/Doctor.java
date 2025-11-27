@@ -18,7 +18,4 @@ public class Doctor extends Person{
         this.specialty = specialty;
     }
 
-    public String getName() {
-        return name;
-    }
 }
