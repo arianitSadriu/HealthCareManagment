@@ -1,19 +1,18 @@
 package HealthCareManagment.service;
 
-public class EmailService implements NotificationService {
+public class SMSService implements NotificationService {
+    private String recipientPhone;
 
-    private String recipientEmail;
-
-    public EmailService(String recipientEmail) {
-        this.recipientEmail = recipientEmail;
+    public SMSService(String recipientPhone) {
+        this.recipientPhone = recipientPhone;
     }
 
     @Override
     public void sendNotification(String message) {
         System.out.println("========================================");
-        System.out.println("EMAIL sent to: " + recipientEmail);
+        System.out.println("SMS sent to: " + recipientPhone);
         System.out.println("Message: " + message);
         System.out.println("========================================");
-
     }
 }
+
