@@ -5,20 +5,17 @@ public enum AppointmentStatus {
     COMPLETED("KOMPLETUAR"),
     CANCELLED("ANULUAR");
 
-    // Field (variable) to store the status text
-    private final String statusiShqip;
+    private final String description;
+    AppointmentStatus(String description) {
 
-    //Constructor
-    AppointmentStatus(String statusiShqip) {
-
-        this.statusiShqip = statusiShqip;
+        this.description = description;
     }
-    public String getStatusiShqip() {
+    public String getDescription() {
 
-        return statusiShqip;
+        return description;
     }
     public String toString() {
-        return statusiShqip;
+        return description;
     }
 
 }
